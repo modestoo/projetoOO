@@ -46,5 +46,10 @@ public class Sala {
 	public Sala() {
 		
 	}
+	
+	//Metedo ainda não implementado para informar quantidade de aulos cadastrados
+	public void informarQuantidadeDeAluno(){
+		System.out.println("Método ainda não implementado!");
+	}
 
-}
+} 
