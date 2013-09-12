@@ -2,6 +2,7 @@ package Classes;
 
 public class Aluno {
 
+	//Atributos da classe Aluno
 	private int matricula;
 	private String nome;
 	private String dataNascimento;
@@ -9,6 +10,7 @@ public class Aluno {
 	private String email;
 	private String serie;
 	
+	//Gets e Sets das classes
 	public int getMatricula() {
 		return matricula;
 	}
@@ -57,8 +59,13 @@ public class Aluno {
 		this.serie = serie;
 	}
 	
-	public Aluno() {
-		
+	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
+	public Aluno(int matricula, String nome, String endereco) {
+		this.matricula = matricula;
+		this.nome = nome;
+		this.endereco = endereco; 	
 	}
+	
+	
 
 }
