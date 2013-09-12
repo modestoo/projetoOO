@@ -75,10 +75,5 @@ public class Funcionario {
 		this.funcao = funcao;
 		this.funcao = funcao;
 	}
-	
-	//Método que retorna o salario do funcionario informado
-	public void verificarSalario(int codigoIdentificacao, String nome) {
-		System.out.println("O valor de seu salário é:" + this.salario);
-	}
 
 }
