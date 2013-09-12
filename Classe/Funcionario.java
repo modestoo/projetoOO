@@ -73,7 +73,7 @@ public class Funcionario {
 		this.nome = nome;
 		this.codigoIdentificacao = codigoIdentificacao;
 		this.funcao = funcao;
-		this.funcao = funcao;
+		this.telefone = telefone;
 	}
 	
 	//Método que retorna o salario do funcionario informado

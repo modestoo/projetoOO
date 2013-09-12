@@ -51,7 +51,7 @@ public class Direcao {
 	}
 
 	//Construtor sem sobrecarga (vazio)
-	public Direcao(String matricula, String nome) {
+	public Direcao() {
 		
 	}
 	

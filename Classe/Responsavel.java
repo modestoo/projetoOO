@@ -102,5 +102,7 @@ public class Responsavel {
 		this.nomeMae = nomeMae;
 		this.telefoneMae = telefoneMae;
 	}
+	
+	//Sem método por enquanto
 
 }
