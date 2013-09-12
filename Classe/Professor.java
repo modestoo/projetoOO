@@ -64,4 +64,10 @@ public class Professor {
 		
 	}
 
+	//Metodo no qual é possivel modificar a graduação informado pelo professor
+	public void atualizarGraduacao (String graduacao) {
+		this.graduacao = graduacao;
+		
+		System.out.println("O nome e-mail cadastrado é: " + this.graduacao);
+	}
 }

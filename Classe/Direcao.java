@@ -51,8 +51,13 @@ public class Direcao {
 	}
 
 	//Construtor sem sobrecarga (vazio)
-	public Direcao() {
+	public Direcao(String matricula, String nome) {
 		
+	}
+	
+	//Metodo para advertir alunos por diretores
+	public void advertirAluno(String matricula, String nome){
+		System.out.println("O aluno " + nome + "será advertido!");
 	}
 
 }

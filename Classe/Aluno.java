@@ -66,6 +66,16 @@ public class Aluno {
 		this.endereco = endereco; 	
 	}
 	
-	
+	//Metodo no qual será possível matricular novos alunos
+	public void matricularAluno(int matricula, String nome, String dataNascimento,
+			String endereco, String email, String serie ) {
+		this.matricula = matricula;
+		this.nome= nome;
+		this.dataNascimento = dataNascimento;
+		this.endereco = endereco;
+		this.email = email;
+		this.serie = serie;
+		System.out.println("Dados cadastrados!");
+	}
 
 }
