@@ -1,6 +1,13 @@
-projetoOO
-=========
+Seja Bem Vindo!
+==================
 
-Projeto de orientação a objeto 2º/2013
+Aqui estarão disponíveis todos os arquivos referentes ao projeto final da Disciplina de Orientação a Objeto.
 
-Esse projeto será o sotfware de uma Escola.
+Univeridade de Brasilia - Faculdade do Gama
+
+Graduandos em Engenharia de Software
+
+Orientadora: Milene Serrano
+
+Semestre: 2°/ 2013                Temática: Escola
+______________________________________________________________________________________________________
