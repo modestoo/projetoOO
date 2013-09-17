@@ -7,6 +7,7 @@ public class Sala {
 	private String turma;
 	private String professorResponsavel;
 	private String faixaEtaria;
+	private Professor Professor; 
 	
 	//Gets e Sets das classes
 	public int getNumero() {
@@ -40,6 +41,14 @@ public class Sala {
 
 	public void setFaixaEtaria(String faixaEtaria) {
 		this.faixaEtaria = faixaEtaria;
+	}
+	
+	public Professor getProfessor() {
+		return Professor;
+	}
+
+	public void setProfessor(Professor professor) {
+		Professor = professor;
 	}
 
 	//Construtor sem sobrecarga (vazio)
