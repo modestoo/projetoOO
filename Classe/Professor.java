@@ -9,6 +9,8 @@ public class Professor {
 	private String endereco;
 	private String telefone;
 	private String email;
+	private Disciplina disciplina[] = {};
+	private Sala sala;
 	
 	//Gets e Sets das classes
 	public String getNome() {
@@ -57,6 +59,22 @@ public class Professor {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Disciplina[] getDisciplina() {
+		return disciplina;
+	}
+
+	public void setDisciplina(Disciplina[] disciplina) {
+		this.disciplina = disciplina;
+	}
+
+	public Sala getSala() {
+		return sala;
+	}
+
+	public void setSala(Sala sala) {
+		this.sala = sala;
 	}
 
 	//Construtor sem sobrecarga (vazio)
