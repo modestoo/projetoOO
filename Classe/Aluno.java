@@ -9,6 +9,8 @@ public class Aluno {
 	private String endereco;
 	private String email;
 	private String serie;
+	private Responsavel responsavel;
+	private Disciplina disciplina[] = {};
 	
 	//Gets e Sets das classes
 	public int getMatricula() {
@@ -59,6 +61,22 @@ public class Aluno {
 		this.serie = serie;
 	}
 	
+	public Responsavel getResponsavel() {
+		return responsavel;
+	}
+
+	public void setResponsavel(Responsavel responsavel) {
+		this.responsavel = responsavel;
+	}
+
+	public Disciplina[] getDisciplina() {
+		return disciplina;
+	}
+
+	public void setDisciplina(Disciplina[] disciplina) {
+		this.disciplina = disciplina;
+	}
+
 	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
 	public Aluno(int matricula, String nome, String endereco) {
 		this.matricula = matricula;
