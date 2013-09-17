@@ -12,7 +12,8 @@ public class Responsavel {
 	private int cpfMae;
 	private int rgMae;
 	private String telefoneMae;
-	private String emailMae; 
+	private String emailMae;
+	private Aluno aluno[] = {};
 	
 	//Gets e Sets das classes
 	public String getNomePai() {
@@ -93,6 +94,14 @@ public class Responsavel {
 
 	public void setEmailMae(String emailMae) {
 		this.emailMae = emailMae;
+	}
+	
+	public Aluno[] getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno[] aluno) {
+		this.aluno = aluno;
 	}
 
 	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
