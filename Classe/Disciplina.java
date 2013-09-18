@@ -1,4 +1,3 @@
-
 //------------------------------ CLASSE DISCIPLINA ------------------------------------
 package Classes;
 
@@ -55,8 +54,20 @@ public class Disciplina {
         
 	//Construtor sem sobrecarga (vazio)
 	public Disciplina() {
-		
 	}
 	
-	//Sem metodo por enquanto
+	//Metodo para conter os numeros adicionados no vetor
+        public void adicionarAluno(Aluno aluno) {
+		int tamanhoAnterior = this.getAlunos().length;
+		if(tamanhoAnterior-1 >= 40) {
+			System.out.println("Nao e permitido adicionar mais do que 10 alunos.");
+		} else {
+			Aluno[] novosAlunos = new Aluno [tamanhoAnterior];
+			for(int j=0; j < tamanhoAnterior; j++) {
+				novosAlunos[j] = this.getAlunos()[j];
+			}
+			novosAlunos[novosAlunos.length-1] = aluno;
+			this.setAlunos(novosAlunos);
+		}
+	}
 }
