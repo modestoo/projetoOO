@@ -18,7 +18,7 @@ public class Professor {
 	
 //------------------------------ GET'S ------------------------------------
         
-    //Gets e Sets das classes
+    //Gets dos Atributos
     public String getNome() {
         return nome;
     }
@@ -94,11 +94,11 @@ public class Professor {
             
 	}
 
-        //M�todo para conter os n�meros adicionados no vetor
+        //Metodo para conter os numeros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
 		int tamanhoAnterior = this.getDisciplinas().length;
 		if(tamanhoAnterior-1 >= 10) {
-			System.out.println("N�o � permitido adicionar mais do que 10 disciplinas.");
+			System.out.println("Nao e permitido adicionar mais do que 10 disciplinas.");
 		} else {
 			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
 			for(int j=0; j < tamanhoAnterior; j++) {
@@ -109,10 +109,10 @@ public class Professor {
 		}
 	}
 
-	//Metodo no qual � possivel modificar a gradua��o informado pelo professor
+	//Metodo no qual e possivel modificar a graduacaoo informado pelo professor
 	public void atualizarGraduacao (String graduacao) {
 		this.setGraduacao(graduacao);
 		
-		System.out.println("O nome e-mail cadastrado �: " + this.getGraduacao());
+		System.out.println("O nome e-mail cadastrado e: " + this.getGraduacao());
 	}
 }

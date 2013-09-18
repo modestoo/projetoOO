@@ -16,7 +16,7 @@ public class Sala {
 
 //------------------------------ GET'S ------------------------------------
         
-    //Gets e Sets das classes
+    //Gets dos Atributos
     public int getNumero() {
         return numero;
     }
@@ -68,8 +68,8 @@ public class Sala {
 		
 	}
 	
-	//Metedo ainda n�o implementado para informar quantidade de aulos cadastrados
+	//Metedo ainda nao implementado para informar quantidade de aulos cadastrados
 	public void informarQuantidadeDeAluno(){
-		System.out.println("M�todo ainda n�o implementado!");
+		System.out.println("Metodo ainda nao implementado!");
 	}
 } 

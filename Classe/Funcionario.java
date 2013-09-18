@@ -18,7 +18,7 @@ public class Funcionario {
 	
 //------------------------------ GET'S ------------------------------------
         
-    //Gets e Sets das classes
+    //Gets dos Atributos
     public String getNome() {
         return nome;
     }
@@ -81,7 +81,7 @@ public class Funcionario {
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
         
         
-	//Construtor sobrecarregado para n�o haver instancias sem alguns dados importantes 
+	//Construtor sobrecarregado para nao haver instancias sem alguns dados importantes 
 	public Funcionario(String nome, int codigoIdentificacao, String funcao, String telefone) {
 		this.nome = nome;
 		this.codigoIdentificacao = codigoIdentificacao;
@@ -89,7 +89,7 @@ public class Funcionario {
 		this.telefone = telefone;
 	}
 	
-	//M�todo que retorna o salario do funcionario informado
+	//Metodo que retorna o salario do funcionario informado
 	public void verificarSalario(int codigoIdentificacao, String nome) {
 		System.out.println("O valor de seu sal�rio �:" + this.getSalario());
 	}

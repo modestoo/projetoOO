@@ -58,5 +58,5 @@ public class Disciplina {
 		
 	}
 	
-	//Sem m�todo por enquanto
+	//Sem metodo por enquanto
 }
