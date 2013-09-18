@@ -70,4 +70,13 @@ public class Disciplina {
 			this.setAlunos(novosAlunos);
 		}
 	}
+	
+	//Metodo para exibicao de dados na tela
+        public String toString(){
+            return "\n Dados do Disciplina"
+                    + "\n Código: " + getCodigo()
+                    + "\n Nome: " + getNome()
+                    + "\n Professor: " + getProfessor()
+                    + "\n Alunos: " + getAlunos();
+         }
 }
