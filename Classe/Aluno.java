@@ -77,6 +77,21 @@ public class Aluno {
 		this.disciplina = disciplina;
 	}
 
+        //Método para conter os números adicionados no vetor
+	public void adicionarDisciplina(Disciplina disciplina) {
+		int tamanhoAnterior = this.disciplinas.length;
+		if(tamanhoAnterior-1 >= 10) {
+			System.out.println("Não é permitido adicionar mais do que 10 disciplinas.");
+		} else {
+			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
+			for(int j=0; j < tamanhoAnterior; j++) {
+				novasDisciplinas[j] = this.disciplinas[j];
+			}
+			novasDisciplinas[novasDisciplinas.length-1] = disciplina;
+			this.setDisciplinas(novasDisciplinas);
+		}
+	}
+        
 	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
 	public Aluno(int matricula, String nome, String endereco) {
 		this.matricula = matricula;
