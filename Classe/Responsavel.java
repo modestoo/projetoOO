@@ -1,6 +1,11 @@
+
+//------------------------------ CLASSE RESPONSAVEL ------------------------------------
 package Classes;
 
 public class Responsavel {
+
+//------------------------------ ATRIBUTOS ------------------------------------
+    
 
 	//Atributos da classe Responsavel
 	private String nomePai;
@@ -15,96 +20,104 @@ public class Responsavel {
 	private String emailMae;
 	private Aluno alunos[] = {};
 	
-	//Gets e Sets das classes
-	public String getNomePai() {
-		return nomePai;
-	}
+//------------------------------ GET'S ------------------------------------
+        
+    //Gets dos Atributos
+    public String getNomePai() {
+        return nomePai;
+    }
 
-	public void setNomePai(String nomePai) {
-		this.nomePai = nomePai;
-	}
+    public int getCpfPai() {
+        return cpfPai;
+    }
 
-	public int getCpfPai() {
-		return cpfPai;
-	}
+    public int getRgPai() {
+        return rgPai;
+    }
 
-	public void setCpfPai(int cpfPai) {
-		this.cpfPai = cpfPai;
-	}
+    public String getTelefonePai() {
+        return telefonePai;
+    }
 
-	public int getRgPai() {
-		return rgPai;
-	}
+    public String getEmailPai() {
+        return emailPai;
+    }
 
-	public void setRgPai(int rgPai) {
-		this.rgPai = rgPai;
-	}
+    public String getNomeMae() {
+        return nomeMae;
+    }
 
-	public String getTelefonePai() {
-		return telefonePai;
-	}
+    public int getCpfMae() {
+        return cpfMae;
+    }
 
-	public void setTelefonePai(String telefonePai) {
-		this.telefonePai = telefonePai;
-	}
+    public int getRgMae() {
+        return rgMae;
+    }
 
-	public String getEmailPai() {
-		return emailPai;
-	}
+    public String getTelefoneMae() {
+        return telefoneMae;
+    }
 
-	public void setEmailPai(String emailPai) {
-		this.emailPai = emailPai;
-	}
+    public String getEmailMae() {
+        return emailMae;
+    }
 
-	public String getNomeMae() {
-		return nomeMae;
-	}
+    public Aluno[] getAlunos() {
+        return alunos;
+    }
+        
+//------------------------------ SET'S ------------------------------------
+        
+    //Sets dos Atributos
+    public void setNomePai(String nomePai) {
+        this.nomePai = nomePai;
+    }
 
-	public void setNomeMae(String nomeMae) {
-		this.nomeMae = nomeMae;
-	}
+    public void setCpfPai(int cpfPai) {
+        this.cpfPai = cpfPai;
+    }
 
-	public int getCpfMae() {
-		return cpfMae;
-	}
+    public void setRgPai(int rgPai) {
+        this.rgPai = rgPai;
+    }
 
-	public void setCpfMae(int cpfMae) {
-		this.cpfMae = cpfMae;
-	}
+    public void setTelefonePai(String telefonePai) {
+        this.telefonePai = telefonePai;
+    }
 
-	public int getRgMae() {
-		return rgMae;
-	}
+    public void setEmailPai(String emailPai) {
+        this.emailPai = emailPai;
+    }
 
-	public void setRgMae(int rgMae) {
-		this.rgMae = rgMae;
-	}
+    public void setNomeMae(String nomeMae) {
+        this.nomeMae = nomeMae;
+    }
 
-	public String getTelefoneMae() {
-		return telefoneMae;
-	}
+    public void setCpfMae(int cpfMae) {
+        this.cpfMae = cpfMae;
+    }
 
-	public void setTelefoneMae(String telefoneMae) {
-		this.telefoneMae = telefoneMae;
-	}
+    public void setRgMae(int rgMae) {
+        this.rgMae = rgMae;
+    }
 
-	public String getEmailMae() {
-		return emailMae;
-	}
+    public void setTelefoneMae(String telefoneMae) {
+        this.telefoneMae = telefoneMae;
+    }
 
-	public void setEmailMae(String emailMae) {
-		this.emailMae = emailMae;
-	}
-	
-	public Aluno[] getAlunos() {
-		return alunos;
-	}
+    public void setEmailMae(String emailMae) {
+        this.emailMae = emailMae;
+    }
 
-	public void setAlunos(Aluno[] alunos) {
-		this.alunos = alunos;
-	}
-
-	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
+    }
+  
+//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+        
+        
+	//Construtor sobrecarregado para nï¿½o haver instancias sem alguns dados importantes 
 	public Responsavel(String nomePai, String telefonePai, String nomeMae, String telefoneMae) {
 		this.nomePai = nomePai;
 		this.telefonePai = telefonePai;
@@ -112,6 +125,5 @@ public class Responsavel {
 		this.telefoneMae = telefoneMae;
 	}
 	
-	//Sem método por enquanto
-
+	//Sem mï¿½todo por enquanto
 }
