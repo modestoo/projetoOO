@@ -34,5 +34,14 @@ public class AlunoTest {
 		assertEquals("Serie1", aluno1.getSerie());
 		
 	}
+	
+	@Test
+	public void testAluno() {
+	Aluno aluno2 = new Aluno(00001, "Aluno2", "endereco2");
+	assertEquals(00001, aluno2.getMatricula());
+	assertEquals("Aluno2", aluno2.getNome());
+	assertEquals("endereco2", aluno2.getEndereco());
+			
+	}
 
 }
