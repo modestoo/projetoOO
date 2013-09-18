@@ -1,6 +1,11 @@
+
+//------------------------------ CLASSE DIRECAO ------------------------------------
 package Classes;
 
 public class Direcao {
+
+//------------------------------ ATRIBUTOS ------------------------------------
+    
 
 	//Atributos da classe Direcao
 	private String diretor;
@@ -9,47 +14,54 @@ public class Direcao {
 	private String psicopedagogo;
 	private String secretaria;
 	
-	//Gets e Sets das classes
-	public String getDiretor() {
-		return diretor;
-	}
+//------------------------------ GET'S ------------------------------------
+        
+    //Gets dos Atributos
+    public String getDiretor() {
+        return diretor;
+    }
 
-	public void setDiretor(String diretor) {
-		this.diretor = diretor;
-	}
+    public String getCoordenador() {
+        return coordenador;
+    }
 
-	public String getCoordenador() {
-		return coordenador;
-	}
+    public String getOrientador() {
+        return orientador;
+    }
 
-	public void setCoordenador(String coordenador) {
-		this.coordenador = coordenador;
-	}
+    public String getPsicopedagogo() {
+        return psicopedagogo;
+    }
 
-	public String getOrientador() {
-		return orientador;
-	}
+    public String getSecretaria() {
+        return secretaria;
+    }
+//------------------------------ SET'S ------------------------------------
+        
+    //Sets dos Atributos
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
+    }
 
-	public void setOrientador(String orientador) {
-		this.orientador = orientador;
-	}
+    public void setCoordenador(String coordenador) {
+        this.coordenador = coordenador;
+    }
 
-	public String getPsicopedagogo() {
-		return psicopedagogo;
-	}
+    public void setOrientador(String orientador) {
+        this.orientador = orientador;
+    }
 
-	public void setPsicopedagogo(String psicopedagogo) {
-		this.psicopedagogo = psicopedagogo;
-	}
+    public void setPsicopedagogo(String psicopedagogo) {
+        this.psicopedagogo = psicopedagogo;
+    }
 
-	public String getSecretaria() {
-		return secretaria;
-	}
-
-	public void setSecretaria(String secretaria) {
-		this.secretaria = secretaria;
-	}
-
+    public void setSecretaria(String secretaria) {
+        this.secretaria = secretaria;
+    }
+  
+//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+        
+        
 	//Construtor sem sobrecarga (vazio)
 	public Direcao() {
 		
@@ -57,7 +69,6 @@ public class Direcao {
 	
 	//Metodo para advertir alunos por diretores
 	public void advertirAluno(String matricula, String nome){
-		System.out.println("O aluno " + nome + "será advertido!");
+		System.out.println("O aluno " + nome + "serï¿½ advertido!");
 	}
-
 }
