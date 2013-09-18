@@ -127,4 +127,17 @@ public class Aluno {
 			System.out.println("\n Nao foi possivel cadastrar os dados. Tente novamente!");
 		}
 	}
+	
+	//Metodo para exibicao de dados na tela
+        public String toString(){
+            return "\n Dados do Aluno"
+                    + "\n Matricula: " + getMatricula()
+                    + "\n Nome: " + getNome()
+                    + "\n Data Nascimento: " + getDataNascimento()
+                    + "\n Endereço: " + getEndereco()
+                    + "\n E-mail: " + getEmail()
+                    + "\n Série: " + getSerie()
+                    + "\n Responsáveis: " + getResponsavel()
+                    + "\n Disciplinas: " + getDisciplinas();
+        }
 }
