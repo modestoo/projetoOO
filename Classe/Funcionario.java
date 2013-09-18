@@ -1,4 +1,3 @@
-
 //------------------------------ CLASSE FUNCIONARIO ------------------------------------
 package Classes;
 
@@ -91,6 +90,6 @@ public class Funcionario {
 	
 	//Metodo que retorna o salario do funcionario informado
 	public void verificarSalario(int codigoIdentificacao, String nome) {
-		System.out.println("O valor de seu sal�rio �:" + this.getSalario());
+		System.out.println("O valor de seu salario e:" + this.getSalario());
 	}
 }
