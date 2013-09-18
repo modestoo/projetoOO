@@ -1,4 +1,3 @@
-
 //------------------------------ CLASSE PROFESSOR ------------------------------------
 package Classes;
 
@@ -115,4 +114,16 @@ public class Professor {
 		
 		System.out.println("O nome e-mail cadastrado e: " + this.getGraduacao());
 	}
+	
+	//Metodo para exibicao de dados na tela
+        public String toString(){
+            return "\n Dados do Professor"
+                    + "\n Código de Identificação: " + getCodigoIdentificacao()
+                    + "\n Nome: " + getNome()
+                    + "\n Graduação: " + getGraduacao()
+                    + "\n Endereço: " + getEndereco()
+                    + "\n Telefone: " + getTelefone()
+                    + "\n E-mail: " + getEmail()
+                    + "\n Disciplinas: " + getDisciplinas();
+         }
 }
