@@ -1,4 +1,3 @@
-
 //------------------------------ CLASSE RESPONSAVEL ------------------------------------
 package Classes;
 
@@ -123,6 +122,21 @@ public class Responsavel {
 		this.telefonePai = telefonePai;
 		this.nomeMae = nomeMae;
 		this.telefoneMae = telefoneMae;
+	}
+	
+	 //Metodo para conter os numeros adicionados no vetor
+        public void adicionarAluno(Aluno aluno) {
+		int tamanhoAnterior = this.getAlunos().length;
+		if(tamanhoAnterior-1 >= 10) {
+			System.out.println("Nao e permitido adicionar mais do que 10 alunos.");
+		} else {
+			Aluno[] novosAlunos = new Aluno [tamanhoAnterior];
+			for(int j=0; j < tamanhoAnterior; j++) {
+				novosAlunos[j] = this.getAlunos()[j];
+			}
+			novosAlunos[novosAlunos.length-1] = aluno;
+			this.setAlunos(novosAlunos);
+		}
 	}
 	
 	//Metodo no qual e possivel cadatrar os dados do PAI do Aluno
