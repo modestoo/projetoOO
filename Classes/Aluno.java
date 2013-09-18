@@ -1,4 +1,3 @@
-
 //------------------------------ CLASSE ALUNO ------------------------------------
 package Classes;
 
@@ -115,12 +114,12 @@ public class Aluno {
 	//Metodo no qual sera possivel matricular novos alunos
 	public void matricularAluno(int matricula, String nome, String dataNascimento,
 			String endereco, String email, String serie ) {
-		this.setMatricula(matricula);
-		this.setNome(nome);
-		this.setDataNascimento(dataNascimento);
-		this.setEndereco(endereco);
-		this.setEmail(email);
-		this.setSerie(serie);
+		this.matricula = matricula;
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.endereco = endereco;
+		this.email = email;
+		this.serie = serie;
 		
 		if (matricula == this.matricula && serie == this.serie) {
 			System.out.println("\n Dados do Aluno cadastrados!");
