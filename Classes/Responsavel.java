@@ -124,7 +124,7 @@ public class Responsavel {
 		this.telefoneMae = telefoneMae;
 	}
 	
-	 //Metodo para conter os numeros adicionados no vetor
+	//Metodo para conter os numeros adicionados no vetor
         public void adicionarAluno(Aluno aluno) {
 		int tamanhoAnterior = this.getAlunos().length;
 		if(tamanhoAnterior-1 >= 10) {
@@ -155,17 +155,29 @@ public class Responsavel {
 	}
 	
 	//Metodo no qual e possivel cadatrar os dados da MAE do Aluno
-		public void cadastrarMae(String nomeMae, String cpfMae, int rgMae, String telefoneMae, String emailMae) {
-			this.nomeMae = nomeMae;
-			this.cpfMae = cpfMae;
-			this.rgMae = rgMae;
-			this.telefoneMae = telefoneMae;
-			this.emailMae = emailMae;
+	public void cadastrarMae(String nomeMae, String cpfMae, int rgMae, String telefoneMae, String emailMae) {
+		this.nomeMae = nomeMae;
+		this.cpfMae = cpfMae;
+		this.rgMae = rgMae;
+		this.telefoneMae = telefoneMae;
+		this.emailMae = emailMae;
 			
-			if (nomeMae == this.nomeMae && emailMae == this.emailMae) {
-				System.out.println("\n Dados da MAE cadastrados!");
-			} else {
-				System.out.println("\n Nao foi possivel cadastrar os dados. Tente novamente!");
-			}
+		if (nomeMae == this.nomeMae && emailMae == this.emailMae) {
+			System.out.println("\n Dados da MAE cadastrados!");
+		} else {
+			System.out.println("\n Nao foi possivel cadastrar os dados. Tente novamente!");
 		}
+	}
+	
+	//Metodo para exibicao de dados na tela
+        public String toString(){
+            return "\n Dados do Responsavel"
+                    + "\n Nome Pai: " + getNomePai()
+                    + "\n Telefone Pai: " + getTelefonePai()
+                    + "\n E-mail Pai: " + getEmailPai()
+                    + "\n Nome Mãe: " + getNomeMae()
+                    + "\n Telefone Mãe: " + getTelefoneMae()
+                    + "\n E-mail Mãe: " + getEmailMae()
+                    + "\n Responsáveis por: " + getAlunos();
+        }
 }
