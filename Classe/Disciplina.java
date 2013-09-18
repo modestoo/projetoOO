@@ -1,51 +1,62 @@
+
+//------------------------------ CLASSE DISCIPLINA ------------------------------------
 package Classes;
 
 public class Disciplina {
 	
+//------------------------------ ATRIBUTOS ------------------------------------
+    
+
 	//Atributos da classe Disciplina
 	private int codigo;
 	private String nome;
 	private Aluno alunos[] = {};
 	private Professor professor;
 
-	//Gets e Sets das classes
-	public int getCodigo() {
-		return codigo;
-	}
+//------------------------------ GET'S ------------------------------------
+        
+    //Gets dos Atributos
+    public int getCodigo() {
+        return codigo;
+    }
 
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public Aluno[] getAlunos() {
+        return alunos;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public Professor getProfessor() {
+        return professor;
+    }
+//------------------------------ SET'S ------------------------------------
+        
+    //Sets dos Atributos
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
 
-	public Aluno[] getAlunos() {
-		return alunos;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public void setAlunos(Aluno[] alunos) {
-		this.alunos = alunos;
-	}
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
+    }
 
-	public Professor getProfessor() {
-		return professor;
-	}
-
-	public void setProfessor(Professor professor) {
-		this.professor = professor;
-	}
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+          
+//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+        
         
 	//Construtor sem sobrecarga (vazio)
 	public Disciplina() {
 		
 	}
 	
-	//Sem método por enquanto
-
+	//Sem mï¿½todo por enquanto
 }
