@@ -1,6 +1,11 @@
+
+//------------------------------ CLASSE SALA ------------------------------------
 package Classes;
 
 public class Sala {
+
+//------------------------------ ATRIBUTOS ------------------------------------
+    
 
 	//Atributos da classe Sala
 	private int numero;
@@ -8,59 +13,63 @@ public class Sala {
 	private String professorResponsavel;
 	private String faixaEtaria;
 	private Professor Professor; 
+
+//------------------------------ GET'S ------------------------------------
+        
+    //Gets e Sets das classes
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getTurma() {
+        return turma;
+    }
+
+    public String getProfessorResponsavel() {
+        return professorResponsavel;
+    }
+
+    public String getFaixaEtaria() {
+        return faixaEtaria;
+    }
+
+    public Professor getProfessor() {
+        return Professor;
+    }
 	
-	//Gets e Sets das classes
-	public int getNumero() {
-		return numero;
-	}
+//------------------------------ SET'S ------------------------------------
+        
+    //Sets dos Atributos
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
+    public void setTurma(String turma) {
+        this.turma = turma;
+    }
 
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
+    public void setProfessorResponsavel(String professorResponsavel) {
+        this.professorResponsavel = professorResponsavel;
+    }
 
-	public String getTurma() {
-		return turma;
-	}
+    public void setFaixaEtaria(String faixaEtaria) {
+        this.faixaEtaria = faixaEtaria;
+    }
 
-	public void setTurma(String turma) {
-		this.turma = turma;
-	}
-
-	public String getProfessorResponsavel() {
-		return professorResponsavel;
-	}
-
-	public void setProfessorResponsavel(String professorResponsavel) {
-		this.professorResponsavel = professorResponsavel;
-	}
-
-	public String getFaixaEtaria() {
-		return faixaEtaria;
-	}
-
-	public void setFaixaEtaria(String faixaEtaria) {
-		this.faixaEtaria = faixaEtaria;
-	}
-	
-	public Professor getProfessor() {
-		return Professor;
-	}
-
-	public void setProfessor(Professor professor) {
-		Professor = professor;
-	}
-
+    public void setProfessor(Professor Professor) {
+        this.Professor = Professor;
+    }
+  
+//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+        
+        
 	//Construtor sem sobrecarga (vazio)
 	public Sala() {
 		
 	}
 	
-	//Metedo ainda não implementado para informar quantidade de aulos cadastrados
+	//Metedo ainda nï¿½o implementado para informar quantidade de aulos cadastrados
 	public void informarQuantidadeDeAluno(){
-		System.out.println("Método ainda não implementado!");
+		System.out.println("Mï¿½todo ainda nï¿½o implementado!");
 	}
-	
-	
-
 } 
