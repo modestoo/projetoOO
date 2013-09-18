@@ -90,18 +90,18 @@ public class Aluno {
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
        
         
-        //Construtor sobrecarregado para n�o haver instancias sem alguns dados importantes 
+        //Construtor sobrecarregado para nao haver instancias sem alguns dados importantes 
 	public Aluno(int matricula, String nome, String endereco) {
 		this.matricula = matricula;
 		this.nome = nome;
 		this.endereco = endereco; 	
 	}
         
-        //M�todo para conter os n�meros adicionados no vetor
+        //Metodo para conter os numeros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
 		int tamanhoAnterior = this.getDisciplinas().length;
 		if(tamanhoAnterior-1 >= 10) {
-			System.out.println("N�o � permitido adicionar mais do que 10 disciplinas.");
+			System.out.println("\n Nao e permitido adicionar mais do que 10 disciplinas.");
 		} else {
 			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
 			for(int j=0; j < tamanhoAnterior; j++) {
@@ -112,7 +112,7 @@ public class Aluno {
 		}
 	}
         
-	//Metodo no qual ser� poss�vel matricular novos alunos
+	//Metodo no qual sera possivel matricular novos alunos
 	public void matricularAluno(int matricula, String nome, String dataNascimento,
 			String endereco, String email, String serie ) {
 		this.setMatricula(matricula);
@@ -121,6 +121,11 @@ public class Aluno {
 		this.setEndereco(endereco);
 		this.setEmail(email);
 		this.setSerie(serie);
-		System.out.println("Dados cadastrados!");
+		
+		if (matricula == this.matricula && serie == this.serie) {
+			System.out.println("\n Dados do Aluno cadastrados!");
+		} else {
+			System.out.println("\n Nao foi possivel cadastrar os dados. Tente novamente!");
+		}
 	}
 }
