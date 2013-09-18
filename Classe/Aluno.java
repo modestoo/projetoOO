@@ -10,7 +10,7 @@ public class Aluno {
 	private String email;
 	private String serie;
 	private Responsavel responsavel;
-	private Disciplina disciplina[] = {};
+	private Disciplina disciplinas[] = {};
 	
 	//Gets e Sets das classes
 	public int getMatricula() {
@@ -69,19 +69,19 @@ public class Aluno {
 		this.responsavel = responsavel;
 	}
 
-	public Disciplina[] getDisciplina() {
-		return disciplina;
+	public Disciplina[] getDisciplinas() {
+		return disciplinas;
 	}
 
-	public void setDisciplina(Disciplina[] disciplina) {
-		this.disciplina = disciplina;
+	public void setDisciplinas(Disciplina[] disciplinas) {
+		this.disciplinas = disciplinas;
 	}
 
-        //Método para conter os números adicionados no vetor
+        //Mï¿½todo para conter os nï¿½meros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
 		int tamanhoAnterior = this.disciplinas.length;
 		if(tamanhoAnterior-1 >= 10) {
-			System.out.println("Não é permitido adicionar mais do que 10 disciplinas.");
+			System.out.println("Nï¿½o ï¿½ permitido adicionar mais do que 10 disciplinas.");
 		} else {
 			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
 			for(int j=0; j < tamanhoAnterior; j++) {
@@ -92,14 +92,14 @@ public class Aluno {
 		}
 	}
         
-	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
+	//Construtor sobrecarregado para nï¿½o haver instancias sem alguns dados importantes 
 	public Aluno(int matricula, String nome, String endereco) {
 		this.matricula = matricula;
 		this.nome = nome;
 		this.endereco = endereco; 	
 	}
 	
-	//Metodo no qual será possível matricular novos alunos
+	//Metodo no qual serï¿½ possï¿½vel matricular novos alunos
 	public void matricularAluno(int matricula, String nome, String dataNascimento,
 			String endereco, String email, String serie ) {
 		this.matricula = matricula;

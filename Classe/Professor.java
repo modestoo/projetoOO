@@ -9,7 +9,7 @@ public class Professor {
 	private String endereco;
 	private String telefone;
 	private String email;
-	private Disciplina disciplina[] = {};
+	private Disciplina disciplinas[] = {};
 	private Sala sala;
 	
 	//Gets e Sets das classes
@@ -61,12 +61,12 @@ public class Professor {
 		this.email = email;
 	}
 	
-	public Disciplina[] getDisciplina() {
-		return disciplina;
+	public Disciplina[] getDisciplinas() {
+		return disciplinas;
 	}
 
-	public void setDisciplina(Disciplina[] disciplina) {
-		this.disciplina = disciplina;
+	public void setDisciplinas(Disciplina[] disciplinas) {
+		this.disciplinas = disciplinas;
 	}
 
 	public Sala getSala() {
@@ -76,16 +76,31 @@ public class Professor {
 	public void setSala(Sala sala) {
 		this.sala = sala;
 	}
+        
+        //Mï¿½todo para conter os nï¿½meros adicionados no vetor
+	public void adicionarDisciplina(Disciplina disciplina) {
+		int tamanhoAnterior = this.disciplinas.length;
+		if(tamanhoAnterior-1 >= 10) {
+			System.out.println("Nï¿½o ï¿½ permitido adicionar mais do que 10 disciplinas.");
+		} else {
+			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
+			for(int j=0; j < tamanhoAnterior; j++) {
+				novasDisciplinas[j] = this.disciplinas[j];
+			}
+			novasDisciplinas[novasDisciplinas.length-1] = disciplina;
+			this.setDisciplinas(novasDisciplinas);
+		}
+	}
 
 	//Construtor sem sobrecarga (vazio)
 	public Professor() {
 		
 	}
 
-	//Metodo no qual é possivel modificar a graduação informado pelo professor
+	//Metodo no qual ï¿½ possivel modificar a graduaï¿½ï¿½o informado pelo professor
 	public void atualizarGraduacao (String graduacao) {
 		this.graduacao = graduacao;
 		
-		System.out.println("O nome e-mail cadastrado é: " + this.graduacao);
+		System.out.println("O nome e-mail cadastrado ï¿½: " + this.graduacao);
 	}
 }

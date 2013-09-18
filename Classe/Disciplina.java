@@ -5,7 +5,7 @@ public class Disciplina {
 	//Atributos da classe Disciplina
 	private int codigo;
 	private String nome;
-	private Aluno aluno[] = {};
+	private Aluno alunos[] = {};
 	private Professor professor;
 
 	//Gets e Sets das classes
@@ -25,12 +25,12 @@ public class Disciplina {
 		this.nome = nome;
 	}
 
-	public Aluno[] getAluno() {
-		return aluno;
+	public Aluno[] getAlunos() {
+		return alunos;
 	}
 
-	public void setAluno(Aluno[] aluno) {
-		this.aluno = aluno;
+	public void setAlunos(Aluno[] alunos) {
+		this.alunos = alunos;
 	}
 
 	public Professor getProfessor() {
@@ -40,7 +40,7 @@ public class Disciplina {
 	public void setProfessor(Professor professor) {
 		this.professor = professor;
 	}
-	
+        
 	//Construtor sem sobrecarga (vazio)
 	public Disciplina() {
 		
