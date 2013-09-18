@@ -1,6 +1,11 @@
+
+//------------------------------ CLASSE FUNCIONARIO ------------------------------------
 package Classes;
 
 public class Funcionario {
+
+//------------------------------ ATRIBUTOS ------------------------------------
+    
 
 	//Atributos da classe Funcionario
 	private String nome;
@@ -11,64 +16,72 @@ public class Funcionario {
 	private String email;
 	private double salario;
 	
-	//Gets e Sets das classes
-	public String getNome() {
-		return nome;
-	}
+//------------------------------ GET'S ------------------------------------
+        
+    //Gets e Sets das classes
+    public String getNome() {
+        return nome;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public int getCodigoIdentificacao() {
+        return codigoIdentificacao;
+    }
 
-	public int getCodigoIdentificacao() {
-		return codigoIdentificacao;
-	}
+    public String getFuncao() {
+        return funcao;
+    }
 
-	public void setCodigoIdentificacao(int codigoIdentificacao) {
-		this.codigoIdentificacao = codigoIdentificacao;
-	}
+    public String getTelefone() {
+        return telefone;
+    }
 
-	public String getFuncao() {
-		return funcao;
-	}
+    public String getEndereco() {
+        return endereco;
+    }
 
-	public void setFuncao(String funcao) {
-		this.funcao = funcao;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getTelefone() {
-		return telefone;
-	}
+    public double getSalario() {
+        return salario;
+    }
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
+//------------------------------ SET'S ------------------------------------
+        
+    //Sets dos Atributos
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public String getEndereco() {
-		return endereco;
-	}
+    public void setCodigoIdentificacao(int codigoIdentificacao) {
+        this.codigoIdentificacao = codigoIdentificacao;
+    }
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
-	public double getSalario() {
-		return salario;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
-
-	//Construtor sobrecarregado para não haver instancias sem alguns dados importantes 
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+  
+//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+        
+        
+	//Construtor sobrecarregado para nï¿½o haver instancias sem alguns dados importantes 
 	public Funcionario(String nome, int codigoIdentificacao, String funcao, String telefone) {
 		this.nome = nome;
 		this.codigoIdentificacao = codigoIdentificacao;
@@ -76,9 +89,8 @@ public class Funcionario {
 		this.telefone = telefone;
 	}
 	
-	//Método que retorna o salario do funcionario informado
+	//Mï¿½todo que retorna o salario do funcionario informado
 	public void verificarSalario(int codigoIdentificacao, String nome) {
-		System.out.println("O valor de seu salário é:" + this.salario);
+		System.out.println("O valor de seu salï¿½rio ï¿½:" + this.getSalario());
 	}
-
 }
