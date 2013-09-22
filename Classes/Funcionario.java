@@ -14,6 +14,7 @@ public class Funcionario {
 	private String endereco;
 	private String email;
 	private double salario;
+        private Direcao direcao;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -44,6 +45,10 @@ public class Funcionario {
 
     public double getSalario() {
         return salario;
+    }
+    
+    public Direcao getDirecao() {
+        return direcao;
     }
 
 //------------------------------ SET'S ------------------------------------
@@ -77,6 +82,10 @@ public class Funcionario {
         this.salario = salario;
     }
   
+    public void setDirecao(Direcao direcao) {
+        this.direcao = direcao;
+    }
+
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
         
         
@@ -92,4 +101,6 @@ public class Funcionario {
 	public void verificarSalario(int codigoIdentificacao, String nome) {
 		System.out.println("O valor de seu salario e:" + this.getSalario());
 	}
+
+    
 }
