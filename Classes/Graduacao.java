@@ -10,6 +10,7 @@ public class Graduacao {
 	private String instituicao;
 	private String anoTermino;
 	private String duracao;
+        private Professor professor;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -29,6 +30,11 @@ public class Graduacao {
     public String getDuracao() {
         return duracao;
     }
+    
+    public Professor getProfessor() {
+        return professor;
+    }
+
     
 //------------------------------ SET'S ------------------------------------
         
@@ -58,5 +64,5 @@ public class Graduacao {
 	public Graduacao() {
             
 	}
-
+   
 }
