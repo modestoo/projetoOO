@@ -12,7 +12,6 @@ public class Direcao {
 	private String coordenador;
 	private String orientador;
 	private String psicopedagogo;
-	private String secretaria;
         private Funcionario[] funcionarios;
 	
 //------------------------------ GET'S ------------------------------------
@@ -32,10 +31,6 @@ public class Direcao {
 
     public String getPsicopedagogo() {
         return psicopedagogo;
-    }
-
-    public String getSecretaria() {
-        return secretaria;
     }
         
     public Funcionario[] getFuncionarios() {
@@ -59,10 +54,6 @@ public class Direcao {
 
     public void setPsicopedagogo(String psicopedagogo) {
         this.psicopedagogo = psicopedagogo;
-    }
-
-    public void setSecretaria(String secretaria) {
-        this.secretaria = secretaria;
     }
 
     public void setFuncionarios(Funcionario[] funcionarios) {
