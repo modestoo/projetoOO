@@ -13,6 +13,7 @@ public class Direcao {
 	private String orientador;
 	private String psicopedagogo;
 	private String secretaria;
+        private Funcionario[] Funcionarios;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -36,6 +37,11 @@ public class Direcao {
     public String getSecretaria() {
         return secretaria;
     }
+        
+    public Funcionario[] getFuncionarios() {
+        return Funcionarios;
+    }
+
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
@@ -57,6 +63,10 @@ public class Direcao {
 
     public void setSecretaria(String secretaria) {
         this.secretaria = secretaria;
+    }
+
+    public void setFuncionarios(Funcionario[] Funcionarios) {
+        this.Funcionarios = Funcionarios;
     }
   
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
