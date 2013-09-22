@@ -8,7 +8,6 @@ public class Professor {
 	//Atributos da classe Professor
 	private String nome;
 	private int codigoIdentificacao;
-	private String graduacao;
 	private String endereco;
 	private String telefone;
 	private String email;
@@ -24,10 +23,6 @@ public class Professor {
 
     public int getCodigoIdentificacao() {
         return codigoIdentificacao;
-    }
-
-    public String getGraduacao() {
-        return graduacao;
     }
 
     public String getEndereco() {
@@ -59,10 +54,6 @@ public class Professor {
 
     public void setCodigoIdentificacao(int codigoIdentificacao) {
         this.codigoIdentificacao = codigoIdentificacao;
-    }
-
-    public void setGraduacao(String graduacao) {
-        this.graduacao = graduacao;
     }
 
     public void setEndereco(String endereco) {
@@ -108,19 +99,12 @@ public class Professor {
 		}
 	}
 
-	//Metodo no qual e possivel modificar a graduacaoo informado pelo professor
-	public void atualizarGraduacao (String graduacao) {
-		this.setGraduacao(graduacao);
-		
-		System.out.println("O nome e-mail cadastrado e: " + this.getGraduacao());
-	}
 	
 	//Metodo para exibicao de dados na tela
         public String toString(){
             return "\n Dados do Professor"
                     + "\n Código de Identificação: " + getCodigoIdentificacao()
                     + "\n Nome: " + getNome()
-                    + "\n Graduação: " + getGraduacao()
                     + "\n Endereço: " + getEndereco()
                     + "\n Telefone: " + getTelefone()
                     + "\n E-mail: " + getEmail()
