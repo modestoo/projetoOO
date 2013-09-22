@@ -86,8 +86,10 @@ public class Professor {
         
         //Construtor sem sobrecarga (vazio)
 	public Professor() {
-            
+            Graduacao graduacao = new Graduacao(this);
+            this.graduacao = graduacao;
 	}
+        
 
         //Metodo para conter os numeros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
@@ -104,7 +106,12 @@ public class Professor {
 		}
 	}
 
-	
+	//Metodo que permite criar uma graduação
+        public void criarGraduacao(Graduacao graduacao){
+            this.graduacao = graduacao;
+        }
+        
+        
 	//Metodo para exibicao de dados na tela
         public String toString(){
             return "\n Dados do Professor"
@@ -114,7 +121,8 @@ public class Professor {
                     + "\n Telefone: " + getTelefone()
                     + "\n E-mail: " + getEmail()
                     + "\n Disciplinas: " + getDisciplinas();
-         }
-
+        }
+        
+        
  
 }
