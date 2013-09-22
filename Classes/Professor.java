@@ -13,6 +13,7 @@ public class Professor {
 	private String email;
 	private Disciplina disciplinas[] = {};
 	private Sala sala;
+        private Graduacao graduacao;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -43,6 +44,10 @@ public class Professor {
 
     public Sala getSala() {
         return sala;
+    }
+    
+    public Graduacao getGraduacao() {
+        return graduacao;
     }
     
 //------------------------------ SET'S ------------------------------------
@@ -110,4 +115,6 @@ public class Professor {
                     + "\n E-mail: " + getEmail()
                     + "\n Disciplinas: " + getDisciplinas();
          }
+
+ 
 }
