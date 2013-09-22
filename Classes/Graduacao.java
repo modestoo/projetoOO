@@ -61,8 +61,10 @@ public class Graduacao {
         
         
         //Construtor sem sobrecarga (vazio)
-	public Graduacao() {
-            
+	public Graduacao(Professor professor) {
+            this.professor = professor;
+    
 	}
-   
+        
+        
 }
