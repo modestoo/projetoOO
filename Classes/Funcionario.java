@@ -101,6 +101,11 @@ public class Funcionario {
 	public void verificarSalario(int codigoIdentificacao, String nome) {
 		System.out.println("O valor de seu salario e:" + this.getSalario());
 	}
+        
+        //Metodo para criar uma direcao
+	public void criarDirecao(Direcao direcao) {
+		this.direcao = direcao;
+	}
 
     
 }
