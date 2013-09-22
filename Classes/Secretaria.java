@@ -12,6 +12,7 @@ public class Secretaria {
 	private String nome;
 	private String matricula;
 	private String funcao;
+        private Direcao direcao;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -30,6 +31,10 @@ public class Secretaria {
 
     public String getFuncao() {
         return funcao;
+    }
+    
+    public Direcao getDirecao() {
+        return direcao;
     }
 	
 //------------------------------ SET'S ------------------------------------
@@ -50,16 +55,15 @@ public class Secretaria {
     public void setFuncao(String funcao) {
         this.funcao = funcao;
     }
-
+    
+    public void setDirecao(Direcao direcao) {
+        this.direcao = direcao;
+    }
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
         
         
-	//Construtor sem sobrecarga (vazio)
-	public Secretaria() {
+    //Construtor sem sobrecarga (vazio)
+    public Secretaria() {
 		
-	}
-	
-	
+    }
 } 
-    
-
