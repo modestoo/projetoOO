@@ -80,11 +80,12 @@ public class Direcao {
 	
 	//Metodo para advertir alunos por diretores
 	public void advertirAluno(String matricula, String nome){
-            System.out.println("O aluno " + nome + "ser� advertido!");
+            System.out.println("O aluno " + nome + "sera advertido!");
 	}
         
         //Metedo que adiciona uma secretaria
         public void criarSecretaria(Secretaria secretaria) {
             this.secretaria = secretaria;
+            System.out.println("Secretária criada com sucesso!");
         }
 }
