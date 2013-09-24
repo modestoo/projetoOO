@@ -1,13 +1,12 @@
 package Testes;
 
-import Classes.Professor;
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ProfessorTest {
+public class DirecaoTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -18,7 +17,13 @@ public class ProfessorTest {
 	}
 
 	@Test
-	public void testAtualizarGraduacao() {
-		}
-}
+	public void testAdvertirAluno() {
+	
+	}
+	
+	@Test 
+	public void testCriarSecretaria() {
+		
+	}
 
+}
