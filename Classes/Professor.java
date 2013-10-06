@@ -1,93 +1,76 @@
 //------------------------------ CLASSE PROFESSOR ------------------------------------
 package Classes;
 
-public class Professor {
+public class Professor extends Funcionario {
 
 //------------------------------ ATRIBUTOS ------------------------------------
     
 	//Atributos da classe Professor
-	private String nome;
-	private int codigoIdentificacao;
-	private String endereco;
-	private String telefone;
-	private String email;
+	private String especializacao;
+	private String horarioDeAula;
 	private Disciplina disciplinas[] = {};
 	private Sala sala;
-        private Graduacao graduacao;
+    private Graduacao graduacao;
 	
 //------------------------------ GET'S ------------------------------------
         
-    //Gets dos Atributos
-    public String getNome() {
-        return nome;
-    }
-
-    public int getCodigoIdentificacao() {
-        return codigoIdentificacao;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
+    //Gets dos Atributos  
 
     public Disciplina[] getDisciplinas() {
         return disciplinas;
     }
 
-    public Sala getSala() {
+    public String getEspecializacao() {
+		return especializacao;
+	}
+
+	public String getHorarioDeAula() {
+		return horarioDeAula;
+	}
+
+	public Sala getSala() {
         return sala;
     }
+	
+	public Graduacao getGraduacao() {
+		return graduacao;
+	}
     
-    public Graduacao getGraduacao() {
-        return graduacao;
-    }
     
 //------------------------------ SET'S ------------------------------------
         
-    //Sets dos Atributos
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    //Sets dos Atributos  
 
-    public void setCodigoIdentificacao(int codigoIdentificacao) {
-        this.codigoIdentificacao = codigoIdentificacao;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setDisciplinas(Disciplina[] disciplinas) {
+	public void setDisciplinas(Disciplina[] disciplinas) {
         this.disciplinas = disciplinas;
     }
 
     public void setSala(Sala sala) {
         this.sala = sala;
     }
+    
+    public void setEspecializacao(String especializacao) {
+    	this.especializacao = especializacao;
+    }
+
+    public void setHorarioDeAula(String horarioDeAula) {
+    	this.horarioDeAula = horarioDeAula;
+    }
+    
+    public void setGraduacao(Graduacao graduacao) {
+		this.graduacao = graduacao;
+	}
           
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
-        
-        
-        //Construtor sem sobrecarga (vazio)
-	public Professor() {
-            Graduacao graduacao = new Graduacao(this);
-            this.graduacao = graduacao;
+   
+
+	//Construtor sem sobrecarga (vazio)
+	public Professor(String nome, int codigoIdentificacao, String funcao, String telefone) {
+		
+		//Usando Construtor da Classe Pai
+		super (nome, codigoIdentificacao, funcao, telefone);
+		Graduacao graduacao = new Graduacao(this);
+        this.graduacao = graduacao;
 	}
         
 
@@ -112,17 +95,4 @@ public class Professor {
         }
         
         
-	//Metodo para exibicao de dados na tela
-        public String toString(){
-            return "\n Dados do Professor"
-                    + "\n Código de Identificação: " + getCodigoIdentificacao()
-                    + "\n Nome: " + getNome()
-                    + "\n Endereço: " + getEndereco()
-                    + "\n Telefone: " + getTelefone()
-                    + "\n E-mail: " + getEmail()
-                    + "\n Disciplinas: " + getDisciplinas();
-        }
-        
-        
- 
 }
