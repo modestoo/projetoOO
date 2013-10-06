@@ -7,14 +7,15 @@ public class Funcionario {
     
 
 	//Atributos da classe Funcionario
-	private String nome;
-	private int codigoIdentificacao;
-	private String funcao;
-	private String telefone;
-	private String endereco;
-	private String email;
-	private double salario;
-        private Direcao direcao;
+	protected String nome;
+	protected String cpf;
+	protected int rg;
+	protected int codigoIdentificacao;
+	protected String funcao;
+	protected String telefone;
+	protected String endereco;
+	protected String email;
+	protected Direcao direcao;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -22,8 +23,16 @@ public class Funcionario {
     public String getNome() {
         return nome;
     }
+    
+    public String getCpf() {
+		return cpf;
+	}
 
-    public int getCodigoIdentificacao() {
+	public int getRg() {
+		return rg;
+	}
+
+	public int getCodigoIdentificacao() {
         return codigoIdentificacao;
     }
 
@@ -42,10 +51,6 @@ public class Funcionario {
     public String getEmail() {
         return email;
     }
-
-    public double getSalario() {
-        return salario;
-    }
     
     public Direcao getDirecao() {
         return direcao;
@@ -57,8 +62,16 @@ public class Funcionario {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
+    public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
-    public void setCodigoIdentificacao(int codigoIdentificacao) {
+	public void setRg(int rg) {
+		this.rg = rg;
+	}
+
+	public void setCodigoIdentificacao(int codigoIdentificacao) {
         this.codigoIdentificacao = codigoIdentificacao;
     }
 
@@ -78,9 +91,6 @@ public class Funcionario {
         this.email = email;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
   
     public void setDirecao(Direcao direcao) {
         this.direcao = direcao;
@@ -97,15 +107,9 @@ public class Funcionario {
 		this.telefone = telefone;
 	}
 	
-	//Metodo que retorna o salario do funcionario informado
-	public void verificarSalario(int codigoIdentificacao, String nome) {
-		System.out.println("O valor de seu salario e:" + this.getSalario());
-	}
         
-        //Metodo para criar uma direcao
+    //Metodo para criar uma direcao
 	public void criarDirecao(Direcao direcao) {
 		this.direcao = direcao;
 	}
-
-    
 }
