@@ -1,4 +1,4 @@
-package Testes;
+package Main;
 
 //Importacao das classes para utilizacao
 import Classes.Aluno;
