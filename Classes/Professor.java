@@ -10,6 +10,7 @@ public class Professor extends Funcionario {
 	private String horarioDeAula;
 	private Disciplina disciplinas[] = {};
 	private Sala sala;
+	private String conteudoMinistrado;
     private Graduacao graduacao;
 	
 //------------------------------ GET'S ------------------------------------
@@ -32,6 +33,10 @@ public class Professor extends Funcionario {
         return sala;
     }
 	
+	public String getConteudoMinistrado(){
+		return conteudoMinistrado;
+	}
+	
 	public Graduacao getGraduacao() {
 		return graduacao;
 	}
@@ -51,6 +56,10 @@ public class Professor extends Funcionario {
     
     public void setEspecializacao(String especializacao) {
     	this.especializacao = especializacao;
+    }
+    
+    public void setConteudoMinistrado(String conteudoMinistrado){
+    	this.conteudoMinistrado = conteudoMinistrado;
     }
 
     public void setHorarioDeAula(String horarioDeAula) {
