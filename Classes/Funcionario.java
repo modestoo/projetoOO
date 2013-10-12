@@ -15,11 +15,15 @@ public class Funcionario {
 	protected String telefone;
 	protected String endereco;
 	protected String email;
+	protected boolean presenca;
+	protected String descricaoRelatorio;
 	protected Direcao direcao;
+	
 	
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+	
     public String getNome() {
         return nome;
     }
@@ -52,14 +56,24 @@ public class Funcionario {
         return email;
     }
     
+    public boolean isPresenca() {
+		return presenca;
+	}
+    
+    public String getDescricaoRelatorio() {
+    	return descricaoRelatorio;
+    }
+    
     public Direcao getDirecao() {
         return direcao;
     }
+    
 
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
-    public void setNome(String nome) {
+    
+	public void setNome(String nome) {
         this.nome = nome;
     }
     
@@ -90,9 +104,16 @@ public class Funcionario {
     public void setEmail(String email) {
         this.email = email;
     }
-
   
-    public void setDirecao(Direcao direcao) {
+    public void setPresenca(boolean presenca) {
+		this.presenca = presenca;
+	}
+    
+    public void setDescricaoRelatorio (String descricaoRelatorio){
+    	this.descricaoRelatorio = descricaoRelatorio;
+    }
+
+	public void setDirecao(Direcao direcao) {
         this.direcao = direcao;
     }
 
@@ -112,4 +133,6 @@ public class Funcionario {
 	public void criarDirecao(Direcao direcao) {
 		this.direcao = direcao;
 	}
+	
+	
 }
