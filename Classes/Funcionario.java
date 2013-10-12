@@ -135,4 +135,15 @@ public class Funcionario {
 	}
 	
 	
+	//Metodo para polimorfismos
+	public void gerarRelatorio(String descricaoRelatorio) {
+		
+	}
+	
+	
+	//Metodo para polimorfismos
+	public void baterPonto(boolean presenca) {
+		
+	}
+
 }
