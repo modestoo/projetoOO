@@ -35,30 +35,10 @@ public class ProfessorTest {
 	}
 
 	@Test
-	public void testGetNome() {
+	public void testGetConteudoMinistrado() {
 		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		assertEquals(p1.getNome(), "p1");
-		
-	}
-
-	@Test
-	public void testGetCodigoIdentificacao() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		assertEquals(p1.getCodigoIdentificacao(), 123);
-		
-	}
-
-	@Test
-	public void testGetFuncao() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		assertEquals(p1.getFuncao(), "prof");
-		
-	}
-
-	@Test
-	public void testGetTelefone() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		assertEquals(p1.getTelefone(), "9876 - 6789");
+		p1.setConteudoMinistrado("Portugues");
+		assertEquals(p1.getConteudoMinistrado(), "Portugues");
 		
 	}
 
