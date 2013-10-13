@@ -89,14 +89,14 @@ public class Aluno {
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
        
         
-        //Construtor sobrecarregado para nao haver instancias sem alguns dados importantes 
+    //Construtor sobrecarregado para nao haver instancias sem alguns dados importantes 
 	public Aluno(int matricula, String nome, String endereco) {
 		this.matricula = matricula;
 		this.nome = nome;
 		this.endereco = endereco; 	
 	}
         
-        //Metodo para conter os numeros adicionados no vetor
+    //Metodo para conter os numeros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
 		int tamanhoAnterior = this.getDisciplinas().length;
 		if(tamanhoAnterior-1 >= 10) {
@@ -129,15 +129,15 @@ public class Aluno {
 	}
 	
 	//Metodo para exibicao de dados na tela
-        public String toString(){
-            return "\n Dados do Aluno"
+    public String toString(){
+    	return "\n Dados do Aluno"
                     + "\n Matricula: " + getMatricula()
                     + "\n Nome: " + getNome()
                     + "\n Data Nascimento: " + getDataNascimento()
-                    + "\n Endereço: " + getEndereco()
+                    + "\n Endereco: " + getEndereco()
                     + "\n E-mail: " + getEmail()
-                    + "\n Série: " + getSerie()
-                    + "\n Responsáveis: " + getResponsavel()
+                    + "\n Serie: " + getSerie()
+                    + "\n Responsaveis: " + getResponsavel()
                     + "\n Disciplinas: " + getDisciplinas();
         }
 }
