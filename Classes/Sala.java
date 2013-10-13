@@ -17,6 +17,7 @@ public class Sala {
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+	
     public int getNumero() {
         return numero;
     }
@@ -40,6 +41,7 @@ public class Sala {
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
+    
     public void setNumero(int numero) {
         this.numero = numero;
     }
