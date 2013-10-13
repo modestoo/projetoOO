@@ -12,12 +12,13 @@ public class Direcao {
 	private String coordenador;
 	private String orientador;
 	private String psicopedagogo;
-        private Funcionario[] funcionarios;
-        private Secretaria secretaria;
+    private Funcionario[] funcionarios;
+    private Secretaria secretaria;
 	
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+    
     public String getDiretor() {
         return diretor;
     }
@@ -45,6 +46,7 @@ public class Direcao {
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
+    
     public void setDiretor(String diretor) {
         this.diretor = diretor;
     }
@@ -83,9 +85,9 @@ public class Direcao {
             System.out.println("O aluno " + nome + "sera advertido!");
 	}
         
-        //Metedo que adiciona uma secretaria
-        public void criarSecretaria(Secretaria secretaria) {
+    //Metedo que adiciona uma secretaria
+    public void criarSecretaria(Secretaria secretaria) {
             this.secretaria = secretaria;
-            System.out.println("Secretária criada com sucesso!");
-        }
+            System.out.println("Secretaria criada com sucesso!");
+    }
 }
