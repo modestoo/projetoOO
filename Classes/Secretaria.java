@@ -66,6 +66,10 @@ public class Secretaria extends Funcionario {
     public String gerarRelatorio(){
     	return folga;
     }
+    //Sobrescrista do metodo baterPonto
+    public String baterPonto(){
+    	return folga;
+    }
     
  
 } 

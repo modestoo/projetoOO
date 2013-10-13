@@ -106,6 +106,10 @@ public class Professor extends Funcionario {
         public String gerarRelatorio(){
         	return conteudoMinistrado;
         }
+    //Sobrescrita do metodo baterPonto
+        public String baterPonto(){
+        	return conteudoMinistrado;
+        }
         
 
 }
