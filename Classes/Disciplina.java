@@ -15,6 +15,7 @@ public class Disciplina {
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+	
     public int getCodigo() {
         return codigo;
     }
@@ -33,6 +34,7 @@ public class Disciplina {
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
+    
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
@@ -57,7 +59,7 @@ public class Disciplina {
 	}
 	
 	//Metodo para conter os numeros adicionados no vetor
-        public void adicionarAluno(Aluno aluno) {
+    public void adicionarAluno(Aluno aluno) {
 		int tamanhoAnterior = this.getAlunos().length;
 		if(tamanhoAnterior-1 >= 40) {
 			System.out.println("Nao e permitido adicionar mais do que 10 alunos.");
@@ -72,11 +74,11 @@ public class Disciplina {
 	}
 	
 	//Metodo para exibicao de dados na tela
-        public String toString(){
-            return "\n Dados do Disciplina"
-                    + "\n Código: " + getCodigo()
+    public String toString(){
+         return "\n Dados do Disciplina"
+                    + "\n CÃ³digo: " + getCodigo()
                     + "\n Nome: " + getNome()
                     + "\n Professor: " + getProfessor()
                     + "\n Alunos: " + getAlunos();
-         }
+    }
 }
