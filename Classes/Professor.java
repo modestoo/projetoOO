@@ -111,7 +111,7 @@ public class Professor extends Funcionario {
     }
     
     
-    //Metodo com polimorfismo para constar presenta no trabalho
+    //Metodo com polimorfismo (Super Funcionario) para constar presencaa no trabalho
     public void baterPonto() {
     	
     	//Aqui nao sera possivel o professor bater ponto se nao tiver chamando o metodo cadastrarConteudoMinistrado
@@ -123,4 +123,27 @@ public class Professor extends Funcionario {
     		System.out.println("E o conteudo ministrado pelo professor " + getNome() + " foi: " + getConteudoMinistrado());
     	}
     }
+    
+    
+    //Metodo para cadastrar a descricao do registro de atividades
+    public void cadastrarDescricaoRelatorio(String descricaoRelatorio){
+    	this.descricaoRelatorio = descricaoRelatorio;
+    }
+    
+    
+    //Metodo com polimorfismo (Super Funcionario) para gerar relatorio de atividades
+    public void gerarRelatorio() {
+    	if (this.descricaoRelatorio == null){
+    		System.out.println("Antes de gerar relatorio, voce precisa cadastrar a descricao!");
+    	} else {
+    		if (this.conteudoMinistrado == null){
+        		System.out.println("Voce precisa registrar o conteudo ministrado antes de gerar relatorio!");
+    		} else {
+    			System.out.println("\nRELATORIO DE ATIVIDADES"+
+    					"\nDescricao do relatorio:\n" + getDescricaoRelatorio() +
+    					"\nConteudo ministrado:\n" + getConteudoMinistrado());
+    		}
+    	}
+    }
+    
 }
