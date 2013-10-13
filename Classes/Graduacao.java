@@ -10,11 +10,12 @@ public class Graduacao {
 	private String instituicao;
 	private String anoTermino;
 	private String duracao;
-        private Professor professor;
+    private Professor professor;
 	
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+    
     public String getNome() {
         return nome;
     }
@@ -39,6 +40,7 @@ public class Graduacao {
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -60,12 +62,11 @@ public class Graduacao {
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
         
         
-        //Construtor sem sobrecarga (vazio)
+    //Construtor sem sobrecarga (vazio)
 	public Graduacao(Professor professor) {
-            this.professor = professor;
+        this.professor = professor;
     
 	}
         
         
 }
- 
