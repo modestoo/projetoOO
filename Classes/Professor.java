@@ -83,7 +83,7 @@ public class Professor extends Funcionario {
 	}
         
 
-        //Metodo para conter os numeros adicionados no vetor
+    //Metodo para conter os numeros adicionados no vetor
 	public void adicionarDisciplina(Disciplina disciplina) {
 		int tamanhoAnterior = this.getDisciplinas().length;
 		if(tamanhoAnterior-1 >= 10) {
@@ -97,19 +97,30 @@ public class Professor extends Funcionario {
 			this.setDisciplinas(novasDisciplinas);
 		}
 	}
+	
 
-	//Metodo que permite criar uma graduação
-        public void criarGraduacao(Graduacao graduacao){
-            this.graduacao = graduacao;
-        }
-    //Sobrescrita do metodo gerarRelatorio
-        public String gerarRelatorio(){
-        	return conteudoMinistrado;
-        }
-    //Sobrescrita do metodo baterPonto
-        public String baterPonto(){
-        	return conteudoMinistrado;
-        }
-        
-
+	//Metodo que permite criar uma graduacao
+    public void criarGraduacao(Graduacao graduacao){
+    	this.graduacao = graduacao;
+    }
+    
+    
+    //Metodo que resgistra conteudo ministrado na auala
+    public void cadastrarConteudoMinistrado (String conteudoMinistrado){
+    	this.conteudoMinistrado = conteudoMinistrado;
+    }
+    
+    
+    //Metodo com polimorfismo para constar presenta no trabalho
+    public void baterPonto() {
+    	
+    	//Aqui nao sera possivel o professor bater ponto se nao tiver chamando o metodo cadastrarConteudoMinistrado
+    	if (conteudoMinistrado == null){
+    		System.out.println("Voce precisa registrar o conteudo ministrado antes de bater o ponto!");
+    	} else {
+    		setPresenca(true);
+    		isPresenca();
+    		System.out.println("E o conteudo ministrado pelo professor " + getNome() + " foi: " + getConteudoMinistrado());
+    	}
+    }
 }
