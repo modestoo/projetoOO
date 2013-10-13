@@ -79,11 +79,29 @@ public class Secretaria extends Funcionario {
     	}
     }
     
+    
     //Metodo com polimorfismo para constar presenca no trabalho
     public void baterPonto() {
     	setPresenca(true);
 		isPresenca();
 		this.exibirFolga(this.folga);
     }
-    	
+    
+    
+    //Metodo com polimorfismo (Super Funcionario) para gerar relatorio de atividades
+    public void gerarRelatorio() {
+    	if (this.descricaoRelatorio == null){
+    		System.out.println("Antes de gerar relatorio, voce precisa cadastrar a descricao!");
+    	} else {
+    		if (this.folga == null){
+    			System.out.println("\nRELATORIO DE ATIVIDADES"+
+    					"\nDescricao do relatorio:\n" + getDescricaoRelatorio() +
+    					"\nFolga sera: \nSEM FOLGA!");
+    		} else {
+    			System.out.println("\nRELATORIO DE ATIVIDADES"+
+    					"\nDescricao do relatorio:\n" + getDescricaoRelatorio() +
+    					"\nFolga sera:\n" + getFolga());
+    		}
+    	}
+    }
 } 
