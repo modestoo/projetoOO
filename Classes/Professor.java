@@ -125,12 +125,6 @@ public class Professor extends Funcionario {
     }
     
     
-    //Metodo para cadastrar a descricao do registro de atividades
-    public void cadastrarDescricaoRelatorio(String descricaoRelatorio){
-    	this.descricaoRelatorio = descricaoRelatorio;
-    }
-    
-    
     //Metodo com polimorfismo (Super Funcionario) para gerar relatorio de atividades
     public void gerarRelatorio() {
     	if (this.descricaoRelatorio == null){
