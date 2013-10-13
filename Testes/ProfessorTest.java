@@ -9,9 +9,15 @@ import org.junit.Test;
 import Classes.Professor;
 
 public class ProfessorTest {
+	
+	Professor p1 = null;
 
 	@Before
 	public void setUp() throws Exception {
+		p1 = new Professor("p1", 123, "prof", "9876 - 6789");
+		p1.setEspecializacao("Pedagocia");
+		p1.setHorarioDeAula("7:00 as 12:00");
+		p1.setConteudoMinistrado("Portugues");
 	}
 
 	@After
@@ -20,25 +26,19 @@ public class ProfessorTest {
 
 	@Test
 	public void testSetEspecializacao() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		p1.setEspecializacao("Pedagocia");
-		assertEquals(p1.getEspecializacao(), "Pedagocia");
+		assertEquals("Pedagocia", p1.getEspecializacao());
 		
 	}
 
 	@Test
 	public void testSetHorarioDeAula() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		p1.setHorarioDeAula("7:00 as 12:00");
-		assertEquals(p1.getHorarioDeAula(), "7:00 as 12:00");
+		assertEquals("7:00 as 12:00", p1.getHorarioDeAula());
 		
 	}
 
 	@Test
 	public void testGetConteudoMinistrado() {
-		Professor p1 = new Professor("p1", 123, "prof", "9876 - 6789");
-		p1.setConteudoMinistrado("Portugues");
-		assertEquals(p1.getConteudoMinistrado(), "Portugues");
+		assertEquals("Portugues", p1.getConteudoMinistrado());
 		
 	}
 
