@@ -11,7 +11,6 @@ public class Secretaria extends Funcionario {
 	private String folga;
 	private String[] agendas = {};
     private Direcao direcao;
-    
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -45,6 +44,7 @@ public class Secretaria extends Funcionario {
     public void setDirecao(Direcao direcao) {
         this.direcao = direcao;
     }
+    
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
      
     
@@ -55,6 +55,7 @@ public class Secretaria extends Funcionario {
     	super (nome, codigoIdentificacao, funcao, telefone);
     }
     
+    
     //Metodo para listar vetor de atributos agendas
     public void listarAgendas(){
     	for (int i=0; i < agendas.length; i++){
@@ -62,14 +63,27 @@ public class Secretaria extends Funcionario {
     	}
     }
     
-    //Sobrescrita do metodo GerarRelatorio
-    public String gerarRelatorio(){
-    	return folga;
-    }
-    //Sobrescrista do metodo baterPonto
-    public String baterPonto(){
-    	return folga;
+    
+    //Metodo para cadastrar folga da secretaria
+    public void cadastrarFolga(String folga) {
+    	this.folga = folga;
     }
     
- 
+    
+    //Metodo para exibir a folga da Secretaria caso ela tenha
+    public void exibirFolga(String folga){
+    	if (folga == null){
+    		System.out.println("A folga da secretaria " + getNome() + " nao possui folga!");
+    	} else {
+    		System.out.println("A folga da secretaria " + getNome() + " sera: " + getFolga());
+    	}
+    }
+    
+    //Metodo com polimorfismo para constar presenca no trabalho
+    public void baterPonto() {
+    	setPresenca(true);
+		isPresenca();
+		this.exibirFolga(this.folga);
+    }
+    	
 } 
