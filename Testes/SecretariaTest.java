@@ -10,8 +10,13 @@ import Classes.Secretaria;
 
 public class SecretariaTest {
 
+	Secretaria s1 = null;
+	
 	@Before
 	public void setUp() throws Exception {
+		s1 = new Secretaria("s1", 123, "sec", "1234 - 6543");
+		s1.setFolga("terca feira");
+	
 	}
 
 	@After
@@ -20,17 +25,16 @@ public class SecretariaTest {
 	
 	@Test
 	public void testGetFolga() {
-		Secretaria s1 = new Secretaria("s1", 123, "sec", "1234 - 6543");
-		s1.setFolga("terca feira");
-		assertEquals(s1.getFolga(), "terca feira");
+		assertEquals("terca feira", s1.getFolga());
+		
 	}
 	
 	@Test
 	public void testGetAgenda() {
-		Secretaria s1 = new Secretaria("s1", 123, "sec", "1234 - 6543");
 		String[] Agendas = {"Segunda","Terca"};
 		s1.setAgendas(Agendas);
-		assertArrayEquals(s1.getAgendas(), Agendas);
+		assertArrayEquals(Agendas, s1.getAgendas());
+		
 	}
 
 }
