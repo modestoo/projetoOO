@@ -22,6 +22,7 @@ public class Responsavel {
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
+	
     public String getNomePai() {
         return nomePai;
     }
@@ -69,6 +70,7 @@ public class Responsavel {
 //------------------------------ SET'S ------------------------------------
         
     //Sets dos Atributos
+    
     public void setNomePai(String nomePai) {
         this.nomePai = nomePai;
     }
@@ -125,7 +127,7 @@ public class Responsavel {
 	}
 	
 	//Metodo para conter os numeros adicionados no vetor
-        public void adicionarAluno(Aluno aluno) {
+    public void adicionarAluno(Aluno aluno) {
 		int tamanhoAnterior = this.getAlunos().length;
 		if(tamanhoAnterior-1 >= 10) {
 			System.out.println("Nao e permitido adicionar mais do que 10 alunos.");
@@ -170,14 +172,14 @@ public class Responsavel {
 	}
 	
 	//Metodo para exibicao de dados na tela
-        public String toString(){
-            return "\n Dados do Responsavel"
+    public String toString(){
+        return "\n Dados do Responsavel"
                     + "\n Nome Pai: " + getNomePai()
                     + "\n Telefone Pai: " + getTelefonePai()
                     + "\n E-mail Pai: " + getEmailPai()
-                    + "\n Nome M„e: " + getNomeMae()
-                    + "\n Telefone M„e: " + getTelefoneMae()
-                    + "\n E-mail M„e: " + getEmailMae()
-                    + "\n Respons·veis por: " + getAlunos();
-        }
+                    + "\n Nome M√£e: " + getNomeMae()
+                    + "\n Telefone M√£e: " + getTelefoneMae()
+                    + "\n E-mail M√£e: " + getEmailMae()
+                    + "\n Respons√°veis por: " + getAlunos();
+    }
 }
