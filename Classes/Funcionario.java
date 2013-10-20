@@ -17,18 +17,6 @@ public class Funcionario extends Pessoa {
 //------------------------------ GET'S ------------------------------------
         
     //Gets dos Atributos
-	
-    public String getNome() {
-        return nome;
-    }
-    
-    public String getCpf() {
-		return cpf;
-	}
-
-	public int getRg() {
-		return rg;
-	}
 
 	public int getCodigoIdentificacao() {
         return codigoIdentificacao;
@@ -38,18 +26,6 @@ public class Funcionario extends Pessoa {
         return funcao;
     }
 
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-    
     public boolean isPresenca() {
 		return presenca;
 	}
@@ -67,17 +43,6 @@ public class Funcionario extends Pessoa {
         
     //Sets dos Atributos
     
-	public void setNome(String nome) {
-        this.nome = nome;
-    }
-    
-    public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	public void setRg(int rg) {
-		this.rg = rg;
-	}
 
 	public void setCodigoIdentificacao(int codigoIdentificacao) {
         this.codigoIdentificacao = codigoIdentificacao;
@@ -85,18 +50,6 @@ public class Funcionario extends Pessoa {
 
     public void setFuncao(String funcao) {
         this.funcao = funcao;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
   
     public void setPresenca(boolean presenca) {
