@@ -11,7 +11,7 @@ public abstract class Pessoa {
 	protected String endereco;
 	protected String email;
 	
-	//Construtor vazio
+//Construtor vazio
 	public Pessoa() {
 		// TODO Auto-generated constructor stub
 	}
