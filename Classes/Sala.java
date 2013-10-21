@@ -14,6 +14,7 @@ public class Sala {
 	private String faixaEtaria;
 	private Professor Professor; 
 	private Aluno[] alunos = {};
+	private final static int QUANTIDADEALUNO = 20;
 
 //------------------------------ GET'S ------------------------------------
         
@@ -67,7 +68,7 @@ public class Sala {
         this.Professor = Professor;
     }
     
-    public void setAluno(Aluno[] alunos){
+    public void setAlunos(Aluno[] alunos){
     	this.alunos = alunos;
     }
   
@@ -78,6 +79,29 @@ public class Sala {
 	public Sala() {
 		
 	}
+	
+	
+	//Metodo para determinar a quantidade de alunos em uma sala
+	public void criarSala(Aluno alunos){
+		if (this.alunos[QUANTIDADEALUNO] != null){
+			int tamanhoAnterior = this.getAlunos().length;
+			if(tamanhoAnterior-1 >= QUANTIDADEALUNO) {
+				System.out.println("\n Nao e permitido adicionar mais do que 20 Alunos.");
+			} else {
+				Aluno[] novosAlunos = new Aluno [tamanhoAnterior];
+				for(int j=0; j < tamanhoAnterior; j++) {
+					novosAlunos[j] = this.getAlunos()[j];
+				}
+				novosAlunos[novosAlunos.length-1] = alunos;
+				this.setAlunos(novosAlunos);
+			}
+			
+		} else {
+			System.out.println("Nao e possivel adicionar novos alunos!\n" +
+					"A quantidade de aluno maxima e: " + QUANTIDADEALUNO);
+		}
+	}
+	
 	
 	//Metedo ainda nao implementado para informar quantidade de aulos cadastrados
 	public void informarQuantidadeDeAluno(){
