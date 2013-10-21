@@ -112,7 +112,7 @@ public class Aluno {
 		if(tamanhoAnterior-1 >= 10) {
 			System.out.println("\n Nao e permitido adicionar mais do que 10 disciplinas.");
 		} else {
-			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior];
+			Disciplina[] novasDisciplinas = new Disciplina [tamanhoAnterior + 1];
 			for(int j=0; j < tamanhoAnterior; j++) {
 				novasDisciplinas[j] = this.getDisciplinas()[j];
 			}
@@ -149,5 +149,7 @@ public class Aluno {
                     + "\n Serie: " + getSerie()
                     + "\n Responsaveis: " + getResponsavel()
                     + "\n Disciplinas: " + getDisciplinas();
-        }
+    }
+    
+    
 }
