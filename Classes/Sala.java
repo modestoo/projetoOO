@@ -115,4 +115,12 @@ public class Sala {
 		int quantidadeAlunos = this.getAlunos().length;
 		System.out.println("Quantidade de aluno na turma " + this.getTurma() + " e: " + quantidadeAlunos);
 	}
+	
+	
+	//Metodo que informa quais alunos pertencem a determinada Sala
+    public void listarAlunos(){
+    	for (int i=0; i < alunos.length; i++){
+    		System.out.println(alunos[i].getNome());
+    	}
+    }
 } 
