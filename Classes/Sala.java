@@ -81,6 +81,13 @@ public class Sala {
 	}
 	
 	
+	//Construtor com sobrecarga
+	public Sala(int numero, String turma) {
+		this.numero = numero;
+		this.turma = turma;
+	}
+	
+	
 	//Metodo para determinar a quantidade de alunos em uma sala
 	public void criarSala(Aluno alunos){
 		if (this.alunos[QUANTIDADEALUNO] != null){
