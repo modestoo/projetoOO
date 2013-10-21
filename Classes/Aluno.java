@@ -15,6 +15,7 @@ public class Aluno {
 	private String serie;
 	private Responsavel responsavel;
 	private Disciplina disciplinas[] = {};
+	private Sala sala;
 	
 //------------------------------ GET'S ------------------------------------
         
@@ -50,6 +51,10 @@ public class Aluno {
     public Disciplina[] getDisciplinas() {
         return disciplinas;
     }
+    
+    public Sala getSala(){
+    	return sala;
+    }
     	
 //------------------------------ SET'S ------------------------------------
         
@@ -84,6 +89,11 @@ public class Aluno {
 
     public void setDisciplinas(Disciplina[] disciplinas) {
         this.disciplinas = disciplinas;
+    }
+    
+    public void setSala(Sala sala) {
+    	this.sala = sala;
+    	
     }
   
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
