@@ -77,8 +77,8 @@ public class FuncionarioTest {
 	}
 	
 	@Test
-	public void testGetPresenca() {
-		assertTrue(true);
+	public void testIsPresenca() {
+		assertTrue(f1.isPresenca());
 		
 	}
 	
