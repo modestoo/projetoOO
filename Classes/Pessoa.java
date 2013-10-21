@@ -1,9 +1,12 @@
+//------------------------------ CLASSE PESSOA ------------------------------------
 package Classes;
 
 public abstract class Pessoa {
+	
 //------------------------------ ATRIBUTOS ------------------------------------
     
-	//atributos da classe pessoa
+	
+	//Atributos da classe Pessoa
 	protected String nome;
 	protected String cpf;
 	protected int rg;
@@ -11,10 +14,7 @@ public abstract class Pessoa {
 	protected String endereco;
 	protected String email;
 	
-//Construtor vazio
-	public Pessoa() {
-		// TODO Auto-generated constructor stub
-	}
+	
 //------------------------------ GET'S ------------------------------------	
 	//Gets dos atributos
 	public String getNome() {
@@ -40,6 +40,8 @@ public abstract class Pessoa {
 	public String getEmail() {
 		return email;
 	}
+	
+	
 //------------------------------ SET'S ------------------------------------	    
 	// Sets dos atributos
 	public void setNome(String nome) {
@@ -66,5 +68,13 @@ public abstract class Pessoa {
 		this.email = email;
 	}
 	
-
+	
+	//------------------------------ METODOS E CONSTRUTORES ------------------------------------
+	
+	
+	//Construtor vazio
+	public Pessoa() {
+			
+	}
+		
 }

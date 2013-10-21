@@ -90,23 +90,18 @@ public class Sala {
 	
 	//Metodo para determinar a quantidade de alunos em uma sala
 	public void criarSala(Aluno alunos){
-		if (this.alunos[QUANTIDADEALUNO] != null){
 			int tamanhoAnterior = this.getAlunos().length;
-			if(tamanhoAnterior-1 >= QUANTIDADEALUNO) {
+			if(tamanhoAnterior > QUANTIDADEALUNO) {
 				System.out.println("\n Nao e permitido adicionar mais do que 20 Alunos.");
 			} else {
-				Aluno[] novosAlunos = new Aluno [tamanhoAnterior];
+				Aluno[] novosAlunos = new Aluno [tamanhoAnterior + 1];
 				for(int j=0; j < tamanhoAnterior; j++) {
 					novosAlunos[j] = this.getAlunos()[j];
 				}
 				novosAlunos[novosAlunos.length-1] = alunos;
 				this.setAlunos(novosAlunos);
+				System.out.println("Aluno cadastrado com sucesso.");
 			}
-			
-		} else {
-			System.out.println("Nao e possivel adicionar novos alunos!\n" +
-					"A quantidade de aluno maxima e: " + QUANTIDADEALUNO);
-		}
 	}
 	
 	

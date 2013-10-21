@@ -8,9 +8,9 @@ public class Professor extends Funcionario {
 	//Atributos da classe Professor
 	private String especializacao;
 	private String horarioDeAula;
+	private String conteudoMinistrado;
 	private Disciplina disciplinas[] = {};
 	private Sala sala;
-	private String conteudoMinistrado;
     private Graduacao graduacao;
 	
 //------------------------------ GET'S ------------------------------------
