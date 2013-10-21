@@ -9,7 +9,7 @@ public class Funcionario extends Pessoa {
 	//Atributos da classe Funcionario
 	protected int codigoIdentificacao;
 	protected String funcao;
-	protected boolean presenca;
+	protected boolean presenca = false; //Caso o professor nao utlize o metodo baterPonto, ele automaticamente tira uma falta;
 	protected String descricaoRelatorio;
 	protected Direcao direcao;
 	
@@ -26,8 +26,13 @@ public class Funcionario extends Pessoa {
         return funcao;
     }
 
-    public boolean isPresenca() {
-		return presenca;
+    public boolean isPresenca() { //Condicao para exibicao
+		if (presenca == false){
+			System.out.println("O funcionario " + getNome() +" nao bateu ponto!");
+		} else {
+			System.out.println("O funcionario " + getNome() +" ja bateu ponto!");
+		}
+    	return presenca;
 	}
     
     public String getDescricaoRelatorio() {
@@ -75,6 +80,12 @@ public class Funcionario extends Pessoa {
 		this.telefone = telefone;
 	}
 	
+	
+	 //Metodo para cadastrar a descricao do registro de atividades
+    public void cadastrarDescricaoRelatorio(String descricaoRelatorio){
+    	this.descricaoRelatorio = descricaoRelatorio;
+    }
+	
         
     //Metodo para criar uma direcao
 	public void criarDirecao(Direcao direcao) {
@@ -83,13 +94,13 @@ public class Funcionario extends Pessoa {
 	
 	
 	//Metodo para polimorfismos
-	public void gerarRelatorio(String descricaoRelatorio) {
+	public void gerarRelatorio() {
 		
 	}
 	
 	
 	//Metodo para polimorfismos
-	public void baterPonto(boolean presenca) {
+	public void baterPonto() {
 		
 	}
 
