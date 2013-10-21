@@ -13,6 +13,7 @@ public class Sala {
 	private String professorResponsavel;
 	private String faixaEtaria;
 	private Professor Professor; 
+	private Aluno Aluno;
 
 //------------------------------ GET'S ------------------------------------
         
@@ -37,6 +38,10 @@ public class Sala {
     public Professor getProfessor() {
         return Professor;
     }
+    
+    public Aluno getAluno() {
+    	return Aluno;
+    }
 	
 //------------------------------ SET'S ------------------------------------
         
@@ -60,6 +65,10 @@ public class Sala {
 
     public void setProfessor(Professor Professor) {
         this.Professor = Professor;
+    }
+    
+    public void setAluno(Aluno Aluno){
+    	this.Aluno = Aluno;
     }
   
 //------------------------------ METODOS E CONSTRUTORES ------------------------------------
