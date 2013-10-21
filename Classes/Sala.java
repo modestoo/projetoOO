@@ -103,8 +103,9 @@ public class Sala {
 	}
 	
 	
-	//Metedo ainda nao implementado para informar quantidade de aulos cadastrados
+	//Metedo para informar quantidade de aulos cadastrados
 	public void informarQuantidadeDeAluno(){
-		System.out.println("Metodo ainda nao implementado!");
+		int quantidadeAlunos = this.getAlunos().length;
+		System.out.println("Quantidade de aluno na turma " + this.getTurma() + " e: " + quantidadeAlunos);
 	}
 } 
