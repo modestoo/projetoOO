@@ -91,17 +91,6 @@ public class Funcionario extends Pessoa {
 	public void criarDirecao(Direcao direcao) {
 		this.direcao = direcao;
 	}
-	
-	
-	//Metodo para polimorfismo
-	public void gerarRelatorio() {
-		
-	}
-	
-	
-	//Metodo para polimorfismo
-	public void baterPonto() {
-		
-	}
+
 
 }
