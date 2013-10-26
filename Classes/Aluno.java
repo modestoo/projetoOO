@@ -1,7 +1,8 @@
 //------------------------------ CLASSE ALUNO ------------------------------------
 package Classes;
+import Interfaces.Interagivel;
 
-public class Aluno {
+public class Aluno implements Interagivel{
 
 //------------------------------ ATRIBUTOS ------------------------------------
     
@@ -151,5 +152,11 @@ public class Aluno {
                     + "\n Disciplinas: " + getDisciplinas();
     }
     
+
+	@Override
+	public void startaTexto(String texto, String[] contatos) {
+		Texto Texto = new Texto();
+		Texto.enviarTexto(texto, this.nome, contatos);
+	}
     
 }
