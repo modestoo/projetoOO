@@ -1,7 +1,8 @@
 //------------------------------ CLASSE PROFESSOR ------------------------------------
 package Classes;
+import Interfaces.Funcionavel;
 
-public class Professor extends Funcionario {
+public class Professor extends Funcionario implements Funcionavel{
 
 //------------------------------ ATRIBUTOS ------------------------------------
     
