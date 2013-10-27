@@ -1,8 +1,9 @@
 
 //------------------------------ CLASSE SECRETARIA ------------------------------------
 package Classes;
+import Interfaces.Funcionavel;
 
-public class Secretaria extends Funcionario {
+public class Secretaria extends Funcionario implements Funcionavel {
     
 //------------------------------ ATRIBUTOS ------------------------------------
     
