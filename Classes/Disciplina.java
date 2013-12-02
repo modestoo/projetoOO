@@ -62,7 +62,7 @@ public class Disciplina {
     public void adicionarAluno(Aluno aluno) {
 		int tamanhoAnterior = this.getAlunos().length;
 		if(tamanhoAnterior-1 >= 40) {
-			System.out.println("Nao e permitido adicionar mais do que 10 alunos.");
+			System.out.println("Nao e permitido adicionar mais do que 40 alunos.");
 		} else {
 			Aluno[] novosAlunos = new Aluno [tamanhoAnterior];
 			for(int j=0; j < tamanhoAnterior; j++) {
@@ -76,7 +76,7 @@ public class Disciplina {
 	//Metodo para exibicao de dados na tela
     public String toString(){
          return "\n Dados do Disciplina"
-                    + "\n CÃ³digo: " + getCodigo()
+                    + "\n Código: " + getCodigo()
                     + "\n Nome: " + getNome()
                     + "\n Professor: " + getProfessor()
                     + "\n Alunos: " + getAlunos();
